@@ -1,8 +1,7 @@
 function [U_final, V_final] = UVpushShore(Uin, Vin, dim)
-%this function modifies a given velocity field (U,V) to free-slip conditions,
+%this function modifies a given velocity field (U,V) to push-shore conditions,
 %so that shore points (i.e. ground points that have at least 1 ocean neighbor)
-%acquire a velocity that is in a tangent direction to the shore at the
-%point.
+%acquire a velocity whose tangent direction to the shore is retained and perpendicular direction is reversed (angle of impact equals angle of outflow)
 
 for i = 1:size(Uin,dim+1)
     
