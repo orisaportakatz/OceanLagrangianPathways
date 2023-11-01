@@ -1,3 +1,6 @@
+%% Configuration file
+% set basic parameters for the configuration of the runs
+
 %% solver params (PARM02)
 options = odeset('RelTol',1e-3,'AbsTol',1e-3,'MaxStep',10*60*60); 
 odesolver = @ode45;
